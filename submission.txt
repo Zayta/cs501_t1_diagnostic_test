@@ -1,0 +1,9 @@
+1. https://github.com/Zayta/cs501_t1_diagnostic_test
+2. https://szhen-cs501t1diagnostictest.herokuapp.com/
+3. I, Sandra Zhen, confirm that I have read and understood the syllabus outlined at https://cs-people.bu.edu/dharmesh/teaching/cs501_t1_fa20. U28019703
+
+Sources:
+
+I borrowed code from:
+
+https://flask.palletsprojects.com/en/1.1.x/api/
