@@ -76,8 +76,7 @@ class ShowUsers(MethodView):
 
     def dispatch_request(self):
         users = User.query.all()
-
-        return " ".join(str(x) for x in users)
+        return str(users)
 
 users_blueprint.add_url_rule('/users/index', view_func=ShowUsers.as_view('show_users'))
 
