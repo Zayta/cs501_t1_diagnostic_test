@@ -66,3 +66,18 @@ auth_blueprint.add_url_rule(
     view_func=registration_view,
     methods=['POST', 'GET']
 )
+
+
+
+users_blueprint = Blueprint('users', __name__)
+
+
+class ShowUsers(MethodView):
+
+    def dispatch_request(self):
+        users = User.query.all()
+
+        return " ".join(str(x) for x in users)
+
+users_blueprint.add_url_rule('/users/index', view_func=ShowUsers.as_view('show_users'))
+
